@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VIKASIT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">CAN BOYS</div>
+    <nav>
+      <ul id="nav-tabs">
+        <li class="active" data-section="trending">Trending</li>
+        <li data-section="top-rated">Horror</li>
+        <li data-section="comedy">Anime</li>
+        <li data-section="about">About Us</li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="video-container">
+    <video autoplay muted loop id="bgVideo">
+      <source src="de.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    <div class="heading-text">
+      <section class="banner">
+        <div>
+          <h1>DEMON SLAYER</h1>
+          <p>Story of Tanjiro and Demons</p>
+          <br />
+          <button id="playBtn" class="buu">Play</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="section" id="movie-section">
+    <h2>Trending Now</h2>
+    <div class="movie-row" id="movie-row">
+      <!-- Movie cards will go here -->
+    </div>
+    <div id="movie-description" class="movie-description"></div>
+  </section>
+
+  <!-- Modal Video Popup -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span id="closeBtn" class="close">&times;</span>
+      <video id="popupVideo" width="720" controls>
+        <source src="demonss.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

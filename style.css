@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1f1f1f;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  user-select: none;
+}
+
+nav ul li.active,
+nav ul li:hover {
+  background-color: #3a3a3a;
+}
+
+.video-container {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+video#bgVideo {
+  width: 100%;
+  height: 170%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.heading-text {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 1.2rem;
+}
+
+.buu {
+  margin-top: 10px;
+  padding: 16px 30px;
+  background-color: #ff3c00;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.section {
+  padding: 20px;
+}
+
+.movie-row {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.movie-card {
+  min-width: 160px;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 60, 0, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie-description {
+  max-width: 700px;
+  background-color: #222;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.about-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.developer-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.developer-img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.developer-card h3 {
+  margin: 10px 0 5px;
+}
+
+.developer-card p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Modal background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000; /* On top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8); /* Black with opacity */
+}
+
+/* Modal content box */
+.modal-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 0;
+  width: 500px;
+  max-width: 95%;
+  background: #000; /* Black background */
+  border-radius: 8px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 12px;
+  right: 55px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff3c00;
+}
+
+/* Movie description styling (if not added yet) */
+.movie-description {
+  max-width: 700px;
+  background-color: #222;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+}
