@@ -16,7 +16,7 @@ const movieData = {
       title: 'Demonslayer',
       img: 'demonpos.png',
       description:
-        'Demon Slayer follows Tanjiro journey to protect his sister and fight demons. The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.Demon Slayer: Kimetsu no Yaiba is a Japanese anime and manga series created by Koyoharu Gotouge. It follows Tanjiro Kamado, a kind-hearted boy who becomes a demon slayer after his family is killed and his sister Nezuko is turned into a demon. The story beautifully blends action, emotion, and stunning animation. With its themes of perseverance, family, and compassion, the series has gained worldwide praise. The breathtaking battles, unique breathing styles, and deep character growth make it unforgettable. Demon Slayer teaches courage and hope, even in the darkest times',
+        'Demon Slayer follows Tanjiro journey to protect his sister and fight demons. The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.Demon Slayer: Kimetsu no Yaiba is a Japanese anime and manga series created by Koyoharu Gotouge. It follows Tanjiro Kamado, a kind-hearted boy who becomes a demon slayer after his family is killed and his sister Nezuko is turned into a demon. The story beautifully blends action, emotion, and stunning animation. With its themes of perseverance, family, and compassion, the series has gained worldwide praise. The breathtaking battles, unique breathing styles, and deep character growth make it unforgettable. Demon Slayer teaches courage and hope, even in the darkest times.___________-Dhanvith K Poojary',
     },
     {
       title: 'jjk',
@@ -168,3 +168,4 @@ window.addEventListener('click', (event) => {
 // Load trending movies initially
 
 loadMovies('trending');
+
